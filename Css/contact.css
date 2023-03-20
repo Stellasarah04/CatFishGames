@@ -1,24 +1,32 @@
 /*Contacte*/
 
+.Parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .formulaire {
-    position: relative;
-    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   form{
     max-width:850px;
-    margin:0 auto;
-    border-top:15px solid #313A3D;
+    margin:0;
+    border-top:15px solid #000;
     background:#FFF;
     padding:0 20px 60px;
     text-align:center;
     font-family:Raleway;
     text-align:center;
-    color:#B6B6B6;
+    color:#000;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     opacity:0.95;
-    box-shadow:0 0 15px -1px #141414;
+    box-shadow:0 0 15px -1px #000;
   }
   
   .contactez-nous{
@@ -40,7 +48,7 @@
     height:100%;
     opacity:0.9;
     padding-left:22%;
-    background-color:#E8E9EA;
+    background-color:#EEE2A5;
     border:0;
     outline:none;
     margin:0;
@@ -52,7 +60,7 @@
     top:-50px;
     width:100%;
     height:100%;
-    background-color:#313A3D;
+    background-color:#EFCB30;
     position:relative;
     line-height:50px;
     font-size:18px;
@@ -70,18 +78,17 @@
   #formContact .contactChamp:nth-child(6) label{
     transition: all 0.3s ease-in-out, width 1.3s ease-in-out; }
   
-  
   div:hover label, div input:focus + label,div textarea:focus + label, .labelOuvert{
     width:20%;
   }
   
   div input:focus + label,div textarea:focus + label{
     background-color:rgb(116, 181, 89);
-    color:#313A3D;
+    color:#000;
   }
   
   input[type=submit]{
-    background-color:#313A3D;
+    background-color:#EFCB30;
     border:0;
     height:50px;
     padding:0 20px;

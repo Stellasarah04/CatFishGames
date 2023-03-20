@@ -5,10 +5,14 @@ body {
   padding: 0;
   display : flex;
   flex-direction: column;
-  background-color: lightgrey;
-  background-color: #000000;
-  text-shadow: 0 0 60px rgba(202, 228, 225, 0.8);
-  color: #000000;
+  background-color: #EEE2A5;
+}
+
+::-webkit-scrollbar {
+  background: black;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to top, #EEE2A5, #EFCB30);
 }
 
 header {
@@ -22,8 +26,6 @@ header {
   height: 100px;
   font-size: 25px;
   z-index: 5;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffffff, 0 0 0.8rem #ffffff, 0 0 2.8rem #ffffff, inset 0 0 1.3rem #ffffff;
 }
 
 nav {
@@ -55,7 +57,230 @@ nav {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
+
+.QuiSommesNous{
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.Organigramme {
+  background:linear-gradient(to top, #EEE2A5, #EFCB30);
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80%;
+}
+
+.organigramme{
+  display : flex;
+  border-radius: 5%;
+  padding : 20px;
+}
+
+.Titre{
+  color: black;
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.texte.equipe {
+  color: black;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.CarrouselPhotoEquipe{
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+
+.PhotoEquipe{
+  width: 300px;
+  height: 200px;
+}
+
+/*-----------------------------------------------------------------------------------Carrousel Photo Equipe--------------------------------------------------------------------------*/
+
+:root {
+  --white: #fff;
+  --red: #e74c3c;
+  --black: #000;
+  --img-color: #ededed;
+  --overlay: rgba(0, 0, 0, 0.75);
+}
+
+ul {
+  list-style: none;
+  width: 500px;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgCarrousel {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  position: absolute;
+  bottom: 0;
+  left: -9999px;
+}
+
+.container {
+  max-width: 450px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.featured-wrapper {
+  position: relative;
+}
+
+.featured-wrapper .featured-list {
+  display: grid;
+}
+
+.featured-wrapper .featured-list li {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.featured-wrapper .arrows label::before,
+.featured-wrapper .arrows label::after {
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--black);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-color: var(--white);
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+.featured-wrapper .arrows label::before {
+  left: 10px;
+}
+
+.featured-wrapper .arrows label::after {
+  right: 10px;
+}
+
+.featured-wrapper .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px 170px ;
+  display: flex;
+  flex-direction: row;
+}
+
+.featured-wrapper .dots li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.featured-wrapper .dots label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  transition: background 0.25s;
+}
+
+.featured-wrapper .dots label:hover {
+  background: currentColor;
+}
+
+[id="image1"]:checked ~ .container .featured-list li:nth-child(1),
+[id="image2"]:checked ~ .container .featured-list li:nth-child(2),
+[id="image3"]:checked ~ .container .featured-list li:nth-child(3),
+[id="image4"]:checked ~ .container .featured-list li:nth-child(4),
+[id="image5"]:checked ~ .container .featured-list li:nth-child(5),
+[id="image6"]:checked ~ .container .featured-list li:nth-child(6),
+[id="image7"]:checked ~ .container .featured-list li:nth-child(7),
+[id="image8"]:checked ~ .container .featured-list li:nth-child(8),
+[id="image9"]:checked ~ .container .featured-list li:nth-child(9),
+[id="image10"]:checked ~ .container .featured-list li:nth-child(10),
+[id="image11"]:checked ~ .container .featured-list li:nth-child(11),
+[id^="image"]:checked ~ .container .arrows [for^="image"]:hover::before,
+[id^="image"]:checked ~ .container .arrows [for^="image"]:hover::after {
+  opacity: 1;
+}
+
+[id="image1"]:checked ~ .container .arrows [for="image11"]::before,
+[id="image2"]:checked ~ .container .arrows [for="image1"]::before,
+[id="image3"]:checked ~ .container .arrows [for="image2"]::before,
+[id="image4"]:checked ~ .container .arrows [for="image3"]::before,
+[id="image5"]:checked ~ .container .arrows [for="image4"]::before,
+[id="image6"]:checked ~ .container .arrows [for="image5"]::before,
+[id="image7"]:checked ~ .container .arrows [for="image6"]::before,
+[id="image8"]:checked ~ .container .arrows [for="image7"]::before,
+[id="image9"]:checked ~ .container .arrows [for="image8"]::before,
+[id="image10"]:checked ~ .container .arrows [for="image9"]::before,
+[id="image11"]:checked ~ .container .arrows [for="image10"]::before {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-prev-slideshow.svg);
+}
+
+[id="image1"]:checked ~ .container .arrows [for="image2"]::after,
+[id="image2"]:checked ~ .container .arrows [for="image3"]::after,
+[id="image3"]:checked ~ .container .arrows [for="image4"]::after,
+[id="image4"]:checked ~ .container .arrows [for="image5"]::after,
+[id="image5"]:checked ~ .container .arrows [for="image6"]::after,
+[id="image6"]:checked ~ .container .arrows [for="image7"]::after,
+[id="image7"]:checked ~ .container .arrows [for="image8"]::after,
+[id="image8"]:checked ~ .container .arrows [for="image9"]::after,
+[id="image9"]:checked ~ .container .arrows [for="image10"]::after,
+[id="image10"]:checked ~ .container .arrows [for="image11"]::after,
+[id="image11"]:checked ~ .container .arrows [for="image1"]::after {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-next-slideshow.svg);
+}
+
+[id="image1"]:checked ~ .container .dots [for="image1"],
+[id="image2"]:checked ~ .container .dots [for="image2"],
+[id="image3"]:checked ~ .container .dots [for="image3"],
+[id="image4"]:checked ~ .container .dots [for="image4"],
+[id="image5"]:checked ~ .container .dots [for="image5"],
+[id="image6"]:checked ~ .container .dots [for="image6"],
+[id="image7"]:checked ~ .container .dots [for="image7"],
+[id="image8"]:checked ~ .container .dots [for="image8"],
+[id="image9"]:checked ~ .container .dots [for="image9"],
+[id="image10"]:checked ~ .container .dots [for="image10"],
+[id="image11"]:checked ~ .container .dots [for="image11"] {
+  background: currentColor;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer {
   display: flex;
@@ -75,94 +300,4 @@ footer {
 
 .Copyright{
   color:white;
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.text {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  width: 700px;
-}
-
-footer {
-  position: relative;
-  top: 150px;
-}
-
-.plateau {
-  width: 750px;
-  height: 750px;
-  position: relative;
-  top: 150px;
-  right: -570px;
-}
-
-.carte1 {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  top: -300px;
-  left: -600px;
-}
-
-.carte2 {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  top: 100px;
-  left: -900px;
-}
-
-.carte3 {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  top: -300px;
-  left: 100px;
-}
-
-.carte4 {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  top: -200px;
-  left: 1450px;
-}
-
-/*# sourceMappingURL=style.css.map */
-
-.Organigramme {
-  background-color: #f1eeeb;
-  position:relative;
-  top: 350px;
-}
-
-.Organigramme img{
-  margin: 0px 400px;
-}
-
-.texte.equipe {
-  font-size: 30px;
-  position:relative;
-  top: 150px;
-  left : 70px;
-  height: 10px;
-  width: 1800px;
-}
-
-.content {
-  height: 1066px;
-}
-
-.footer {
-  background-color: #bc13fe;
-  position:absolute;
-  width: 100%;
-  height: 100px;
-  bottom: 100;
-}
-
-.texte {
-  color:white ;
 }
