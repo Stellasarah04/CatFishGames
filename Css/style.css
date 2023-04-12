@@ -384,3 +384,13 @@ footer {
   color:#ffffff;
   padding: 50px 50px;
 }
+
+/*video*/
+
+video{
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  top: 50px;
+  left: 450px;
+}
