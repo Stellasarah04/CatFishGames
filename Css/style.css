@@ -364,10 +364,8 @@ footer {
 
 /*jeux bouton*/
 
-
 .button-click {
- 
-  width: 100%;
+  width: 10%;
   height: 55px;
   background-color: #000;
   border: none;
@@ -379,7 +377,6 @@ footer {
   color: #fff;
   margin-top: 20px;
   cursor: pointer;
-
 }
 
 .lien-button {
