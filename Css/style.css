@@ -22,7 +22,7 @@ header {
   align-items: center;
   background-color:black;
   text-align: center;
-  width: 100vw;
+  width: 99vw;
   height: 100px;
   font-size: 25px;
   z-index: 5;
@@ -63,7 +63,7 @@ nav {
 
 .QuiSommesNous{
   background: #fff;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
 }
 
@@ -75,7 +75,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 99vw;
   height: 80%;
 }
 
@@ -304,7 +304,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
 }
 
@@ -428,7 +428,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 99vw;
   height: 150px;
   background: black;
   z-index: 2;
