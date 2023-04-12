@@ -282,6 +282,24 @@ input[type="radio"] {
 
 /*--------------------------------------------------------------------------------Jeux------------------------------------------------------------------------------------------*/
 
+[id="image1"]:checked ~ .container .arrows [for="image5"]::before,
+[id="image2"]:checked ~ .container .arrows [for="image1"]::before,
+[id="image3"]:checked ~ .container .arrows [for="image2"]::before,
+[id="image4"]:checked ~ .container .arrows [for="image3"]::before,
+[id="image5"]:checked ~ .container .arrows [for="image4"]::before {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-prev-slideshow.svg);
+}
+
+[id="image1"]:checked ~ .container .arrows [for="image2"]::after,
+[id="image2"]:checked ~ .container .arrows [for="image3"]::after,
+[id="image3"]:checked ~ .container .arrows [for="image4"]::after,
+[id="image4"]:checked ~ .container .arrows [for="image5"]::after,
+[id="image5"]:checked ~ .container .arrows [for="image1"]::after {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-next-slideshow.svg);
+}
+
 .ParentJeux{
   display: flex;
   align-items: center;
@@ -320,6 +338,21 @@ input[type="radio"] {
   width: 500px;
   height: 500px;
   margin: 0px 100px;
+}
+.DescriptifJeux h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DescriptifJeux p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "…";
 }
 
 .Descriptif{
