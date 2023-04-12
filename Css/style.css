@@ -282,18 +282,17 @@ input[type="radio"] {
 
 /*--------------------------------------------------------------------------------Jeux------------------------------------------------------------------------------------------*/
 
-
 .ParentJeux{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   width: 100vw;
   height: 100vh;
 }
 
 .Jeux {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #EFCB30;
@@ -303,11 +302,20 @@ input[type="radio"] {
   height: 400px;
 }
 
+.NomJeux{
+  color: #fff;
+  
+}
+
 .ImageJeux{
   width: 300px;
   height: 300px;
 }
 
+.Prix{
+  color: white;
+  font-size: 20px;
+}
 
 /*---------------------------------------------------------------------------------footer-----------------------------------------------------------------------------------------*/
 
