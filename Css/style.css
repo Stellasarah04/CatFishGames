@@ -294,14 +294,13 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 200px;
+  height: 250px;
   background: black;
   z-index: 2;
 }
 
 .Logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
