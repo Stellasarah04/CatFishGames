@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  form.formulaire{
+    width: 1000px;
+  }
   
   form{
     max-width:850px;
