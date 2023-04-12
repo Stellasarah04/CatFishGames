@@ -294,6 +294,7 @@ input[type="radio"] {
 
 .Jeux {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #EFCB30;
@@ -303,9 +304,18 @@ input[type="radio"] {
   height: 400px;
 }
 
+.NomJeux{
+  color: white;
+}
+
 .ImageJeux{
   width: 300px;
   height: 300px;
+}
+
+.Prix{
+  color: white;
+  font-size: 20px;
 }
 
 
