@@ -22,7 +22,7 @@ header {
   align-items: center;
   background-color:black;
   text-align: center;
-  width: 99vw;
+  width: 100vw;
   height: 100px;
   font-size: 25px;
   z-index: 5;
@@ -304,8 +304,9 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 99vw;
-  height: 100vh;
+  margin-top: 100px;
+  width: 100vw;
+  height: 73vh;
 }
 
 .Jeux {
@@ -384,6 +385,10 @@ input[type="radio"] {
   
 }
 
+.NomCréateur{
+  font-size: 30px;
+}
+
 .ImageJeux{
   width: 300px;
   height: 300px;
@@ -456,12 +461,15 @@ footer {
   height: 50px;
   margin: 0px 10px;
 }
+.RS{
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
 
 .Copyright{
   color:white;
 }
-
-
 
 /*video*/
 
