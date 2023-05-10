@@ -68,9 +68,8 @@ video{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  width: 90vw;
-  height: px;
+  width: 99vw;
+  height: 85vh;
 }
 
 .Evènement{
