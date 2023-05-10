@@ -379,6 +379,10 @@ input[type="radio"] {
   margin: 0px 100px;
 }
 
+.RSC{
+  font-size: 20px;
+}
+
 .ImageCréateur{
   width: 250px;
   height: 310px;
